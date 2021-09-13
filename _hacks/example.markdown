@@ -35,5 +35,5 @@ def fisher_yates_shuffle(the_list):
     return the_list
 ```
 
-
+Try to make your project sound appealing so it will attacts others
 

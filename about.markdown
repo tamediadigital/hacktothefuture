@@ -11,7 +11,7 @@ Here's how to add your hack project to this website...
 - Clone the project from your own account (or where-ever you forked to)
 - Add a file to the _hacks/ directory containing your project - see example.markdown for a template
 - Commit and push the changes to github
-- Open a pull request
+- Open a pull request request back to the main repo using the "Contribute" button
 
 
 ```sh

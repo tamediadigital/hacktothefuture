@@ -1,0 +1,137 @@
+/*
+Fix https://github.com/98mprice/PSone.css/issues/1
+*/
+.container {
+    position: relative;
+    background-image: linear-gradient(#0D2289, #06093B);
+    border: 4px ridge #c6c6c6;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container:before {
+    position: inherit;
+    display: inherit;
+    content: inherit;
+    border: inherit;
+    border-radius: inherit;
+    height: inherit;
+    width: inherit;
+    box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    z-index: inherit;
+}
+
+body {
+    font-family: "Orbitron";
+    font-size: initial;
+    line-height: initial;
+    letter-spacing: 0.1em;
+}
+
+.title {
+    line-height: initial;
+    font-size: 150%;
+}
+
+p {
+    line-height: initial;
+}
+
+
+.httf {
+    font-family: "Orbitron";
+}
+h1.httf {
+    /* font-size: 140%; */
+    /* line-height: 20px; */
+}
+p.httf {
+    /* font-size: 50%; */
+}
+.play {
+    font-family:"Play";
+}
+.logo {
+    height: 50px;
+    left: 0;
+    top: 0;    
+}
+.nav-item {
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+
+pre {
+    font-family: "Press Start 2P";
+}
+@media only screen and (max-width: 768px) {
+    /* .play > .logo {
+        height: 50px;
+        position: absolute;
+    } */
+    .play {
+        margin-left: 1rem;
+    }
+    .container {
+        width: 90%;
+    }
+    .buttons {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .containers {
+        width: calc(100% - .5em);
+    }
+    .title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 120%;
+        /* box-sizing: border-box;
+        width: 260px;
+        height: 24px;
+        font-size: 50px;
+        line-height: 0px; */
+    }
+    .progress:not(:first-child) {
+        margin-top: 35px;
+    }
+    .progress:first-child {
+        margin-top: 10px;
+    }
+    .controller-buttons {
+        margin: 1rem;
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+    .progress > .subtitle {
+        position: absolute;
+        top: .44em;
+        left: 20%;
+        display: block;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    .footer {
+        text-align: center;
+    }
+    .logo {
+        margin-top: .5em;
+    }
+    .fork-me {
+        top: .5em;
+    }
+    .input {
+        width: 90%;
+    }
+}

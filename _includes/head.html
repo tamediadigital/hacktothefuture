@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {%- seo -%}
+  <!-- <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}"> -->
+  <meta name="msapplication-TileColor" content="#E03C34">
+  <meta name="theme-color" content="#E03C34">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/98mprice/PSone.css@master/PSone.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.url }}/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>

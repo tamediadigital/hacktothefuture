@@ -9,6 +9,7 @@ jobs:
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
   automerge:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: automerge

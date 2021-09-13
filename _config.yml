@@ -23,8 +23,8 @@ title: Hack To The Future
 description: >- # this means to ignore newlines until "baseurl:"
   Hack To the Future is the hack-a-thon preceeding the TX Group annual TX | Conference
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tamediadigital.github.io/hacktothefuture" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/hacktothefuture" # the subpath of your site, e.g. /blog
+url: "https://tamediadigital.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 

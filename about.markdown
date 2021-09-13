@@ -15,6 +15,3 @@ Here's how to add your hack project to this website...
 - Check that the results build at (https://tamediadigital.github.io/hacktothefuture/)
 
 
-```sh
-$ git something
-```

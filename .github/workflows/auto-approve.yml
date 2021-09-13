@@ -8,15 +8,8 @@ jobs:
     - uses: hmarr/auto-approve-action@v2
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
-    - name: Trigger next workflow
-      if: success()
-      uses: peter-evans/repository-dispatch@v1
-      with:
-        token: ${{ secrets.REPO_GHA_PAT }}
-        repository: ${{ github.repository }}
-        event-type: trigger-workflow-2
-        client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
   automerge:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: automerge

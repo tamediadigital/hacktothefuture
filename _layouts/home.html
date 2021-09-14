@@ -17,13 +17,11 @@ layout: default
       <div class="container dark">
       {% endif %}
 
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <label class="title">
           <p>
-          <a class="post-link" href="{{ hack.url | relative_url }}">
-            {{ hack.title | escape }}
-          </a>
-          <span class="post-meta">-- {{ hack.date | date: date_format }}</span>
+            <a class="post-link" href="{{ hack.url | relative_url }}">
+              {{ hack.title | escape }}
+            </a>
           </p>
         </label>
 

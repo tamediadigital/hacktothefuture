@@ -48,3 +48,7 @@ bundle exec jekyll serve --config _config.yml,_config_dev.yml
 ```
 
 You will now be able to view the site on [http://localhost:4000/](http://localhost:4000/). Be warned that there are differences in paths locally vs. on the live website - see the `url` and `baseurl` config options in `_config.yml` vs. `_config_dev.yml`
+
+#### Automatic Merges of Pull Requests
+
+I (Harry) have tried to get pull requests to merge automatically, so you can just fork the project and have your updates accepted automatically. That's what is supposed to be going on [here](https://github.com/tamediadigital/hacktothefuture/blob/main/.github/workflows/auto-approve.yml) but seems I'm to stupid to figure out Github Actions and get this working. Anyone who can figure it our, let me know (slack DM: harry.fuecks, TX Group workspace)
